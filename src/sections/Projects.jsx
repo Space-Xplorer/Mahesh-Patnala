@@ -68,7 +68,7 @@ const Projects = () => {
       <div className="container mx-auto px-6 max-w-7xl">
         <div className="section-fade-up text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">
-            Featured <span className="text-accent">Projects</span>
+            Featured <span className="gradient-text">Projects</span>
           </h2>
           <p className="text-gray-600 dark:text-gray-400 text-lg max-w-2xl mx-auto">
             A showcase of my recent work, from mental health platforms to AI-powered solutions

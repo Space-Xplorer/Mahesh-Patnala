@@ -50,7 +50,7 @@ const CodeAnimation = () => {
       return "text-blue-400"
     if (line.includes('"') || line.includes("'")) return "text-green-400"
     if (line.includes("ai.") || line.includes("generateComponent") || line.includes("optimizeCode"))
-      return "text-accent"
+      return "gradient-text"
     if (line.includes("console.log")) return "text-yellow-400"
     return "text-gray-700 dark:text-gray-300"
   }

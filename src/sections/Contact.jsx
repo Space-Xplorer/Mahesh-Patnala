@@ -30,7 +30,7 @@ const Contact = () => {
       <div className="container mx-auto px-6 max-w-7xl">
         <div className="section-fade-up text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">
-            Let's <span className="text-accent">Connect</span>
+            Let's <span className="gradient-text">Connect</span>
           </h2>
           <p className="text-gray-600 dark:text-gray-400 text-lg max-w-2xl mx-auto">
             Ready to collaborate on your next project? Let's discuss how we can bring your ideas to life.
@@ -107,7 +107,7 @@ const Contact = () => {
               <div className="space-y-4">
                 <a
                   href="mailto:maheshwarpatn@gmail.com"
-                  className="flex items-center gap-3 text-gray-600 dark:text-gray-300 hover:text-accent transition-colors p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-dark-bg"
+                  className="flex items-center gap-3 text-gray-600 dark:text-gray-300 transition-colors p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-dark-bg"
                 >
                   <Mail className="w-5 h-5" />
                   maheshwarpatn@gmail.com
@@ -145,7 +145,7 @@ const Contact = () => {
               <a
                 href="/Patnala Maheshwar-VNRVJIET.pdf"
                 download
-                className="inline-flex items-center gap-2 bg-gray-100 dark:bg-dark-bg border border-accent text-accent hover:bg-accent hover:text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+                className="inline-flex items-center gap-2 bg-gray-100 dark:bg-dark-bg border border-accent gradient-text hover:bg-accent hover:text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
               >
                 <Download className="w-5 h-5" />
                 Download Résumé

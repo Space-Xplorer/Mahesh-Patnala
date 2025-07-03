@@ -42,7 +42,7 @@ const Achievements = () => {
       icon: BookOpen,
       title: "Literature Club",
       description: "Stentorian Core Member",
-      color: "text-accent",
+      color: "gradient-text",
       bgColor: "bg-accent/20",
     },
   ]
@@ -52,7 +52,7 @@ const Achievements = () => {
       <div className="container mx-auto px-6 max-w-7xl">
         <div className="section-fade-up text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">
-            Achievements & <span className="text-accent">Recognition</span>
+            Achievements & <span className="gradient-text">Recognition</span>
           </h2>
           <p className="text-gray-600 dark:text-gray-400 text-lg max-w-2xl mx-auto">
             Awards, leadership roles, and community contributions that showcase my diverse interests and capabilities
@@ -73,7 +73,7 @@ const Achievements = () => {
                     <IconComponent className="w-6 h-6" />
                   </div>
                   <div>
-                    <h3 className="font-bold mb-2 group-hover:text-accent transition-colors">{achievement.title}</h3>
+                    <h3 className="font-bold mb-2 transition-colors gradient-text">{achievement.title}</h3>
                     <p className="text-gray-600 dark:text-gray-400 text-sm">{achievement.description}</p>
                   </div>
                 </div>

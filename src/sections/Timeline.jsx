@@ -52,7 +52,7 @@ const Timeline = () => {
       <div className="container mx-auto px-6 max-w-7xl">
         <div className="section-fade-up text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">
-            Experience & <span className="text-accent">Leadership</span>
+            Experience & <span className="gradient-text">Leadership</span>
           </h2>
           <p className="text-gray-600 dark:text-gray-400 text-lg max-w-2xl mx-auto">
             A journey of continuous learning, leadership, and technical growth
@@ -64,7 +64,7 @@ const Timeline = () => {
             <div key={index} className="section-fade-up relative" style={{ animationDelay: `${index * 0.2}s` }}>
               <div className="flex items-start gap-8 pb-12">
                 <div className="flex-shrink-0 w-24 text-right">
-                  <span className="text-accent font-bold text-lg">{exp.year}</span>
+                  <span className="gradient-text font-bold text-lg">{exp.year}</span>
                 </div>
 
                 <div className="relative flex-shrink-0">
@@ -76,7 +76,7 @@ const Timeline = () => {
 
                 <div className="flex-1 bg-white dark:bg-dark-surface border border-gray-300 dark:border-dark-border rounded-xl p-6 hover:shadow-lg transition-all duration-300">
                   <h3 className="text-xl font-bold mb-1">{exp.title}</h3>
-                  <p className="text-accent font-medium mb-2">{exp.role}</p>
+                  <p className="gradient-text font-medium mb-2">{exp.role}</p>
                   {exp.achievement && <p className="text-yellow-400 font-medium mb-2">{exp.achievement}</p>}
                   <p className="text-gray-600 dark:text-gray-300 leading-relaxed">{exp.description}</p>
                 </div>

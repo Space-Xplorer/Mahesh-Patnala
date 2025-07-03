@@ -8,7 +8,7 @@ const AIEdge = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="section-fade-up">
             <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-              AI-Powered <span className="text-accent">Development</span>
+              AI-Powered <span className="gradient-text">Development</span>
             </h2>
             <p className="text-gray-600 dark:text-gray-300 text-lg mb-8 leading-relaxed">
               Leveraging cutting-edge AI tools like GPT-4o and v0.dev to accelerate development cycles and prototype

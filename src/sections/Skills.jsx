@@ -38,7 +38,7 @@ const Skills = () => {
       <div className="container mx-auto px-6 max-w-7xl">
         <div className="section-fade-up text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">
-            Technical <span className="text-accent">Skills</span>
+            Technical <span className="gradient-text">Skills</span>
           </h2>
           <p className="text-gray-600 dark:text-gray-400 text-lg max-w-2xl mx-auto">
             Full-stack development, AI/ML, data analysis, and modern design tools
@@ -52,7 +52,7 @@ const Skills = () => {
               className="section-fade-up bg-white dark:bg-dark-surface border border-gray-300 dark:border-dark-border rounded-xl p-6 hover:shadow-lg transition-all duration-300"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <h3 className="text-xl font-bold mb-4 text-accent">{category.title}</h3>
+              <h3 className="text-xl font-bold mb-4 gradient-text">{category.title}</h3>
               <div className="flex flex-wrap gap-2">
                 {category.skills.map((skill, skillIndex) => (
                   <span

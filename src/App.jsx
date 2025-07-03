@@ -59,7 +59,7 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen bg-white dark:bg-dark-bg text-black dark:text-white transition-colors duration-300">
+    <div className="min-h-screen bg-white dark:bg-dark-bg/60 text-black dark:text-white transition-colors duration-300">
       {/* Theme Toggle */}
       <button
         onClick={toggleTheme}
@@ -68,10 +68,10 @@ function App() {
       >
         {isDark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
       </button>
-
+      {/* <section className="gap-4 flex flex-col w-100 max-w-10xl mx-auto px-6 pt-20 overflow-hidden bg-white dark:bg-slate parallax-bg relative"> */}
       {/* Navigation */}
-      <nav className="fixed top-6 left-1/2 transform -translate-x-1/2 z-40 bg-white/80 dark:bg-dark-surface/80 backdrop-blur-md border border-gray-300 dark:border-dark-border rounded-full px-6 py-3 shadow-lg">
-        <div className="flex space-x-6">
+      <nav className="fixed top-6 left-1/2 transform -translate-x-1/2 z-40 bg-white/60 dark:bg-dark-surface/50 backdrop-blur-md rounded-full px-6 py-3 shadow-lg">
+        <div className="flex space-x-6 fill-black dark:fill-white">
           {[
             { name: "Hero", id: "hero" },
             { name: "Projects", id: "projects" },
@@ -84,14 +84,14 @@ function App() {
             <button
               key={item.name}
               onClick={() => scrollToSection(item.id)}
-              className="text-sm text-gray-700 dark:text-gray-300 hover:text-accent transition-colors cursor-pointer font-medium"
+              className="text-sm text-gray-700 dark:text-gray-300 transition-colors cursor-pointer font-medium"
             >
               {item.name}
             </button>
           ))}
         </div>
       </nav>
-
+    {/* </section> */}
       <main>
         <Hero />
         <Projects />

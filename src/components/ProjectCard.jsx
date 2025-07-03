@@ -39,19 +39,19 @@ const ProjectCard = ({
               {isComingSoon && (
                 <div className="absolute inset-0 bg-black/60 flex items-center justify-center">
                   <div className="text-center">
-                    <Calendar className="w-8 h-8 text-accent mx-auto mb-2" />
-                    <p className="text-accent font-medium">{launchDate}</p>
+                    <Calendar className="w-8 h-8 gradient-text mx-auto mb-2" />
+                    <p className="gradient-text font-medium">{launchDate}</p>
                   </div>
                 </div>
               )}
             </div>
             <div className="p-6">
               <h3 className="text-xl font-bold mb-2">{title}</h3>
-              <p className="text-accent text-sm font-medium mb-2">{role}</p>
+              <p className="gradient-text text-sm font-medium mb-2">{role}</p>
               <p className="text-gray-600 dark:text-gray-400 text-sm mb-3 line-clamp-2">{description}</p>
               <div className="flex flex-wrap gap-2">
                 {achievement && (
-                  <div className="inline-block bg-accent/20 text-accent px-2 py-1 rounded text-xs font-medium">
+                  <div className="inline-block bg-accent/20 gradient-text px-2 py-1 rounded text-xs font-medium">
                     {achievement}
                   </div>
                 )}
@@ -69,10 +69,10 @@ const ProjectCard = ({
         <div className="absolute inset-0 w-full h-full backface-hidden rotate-y-180">
           <div className="bg-white dark:bg-dark-surface border border-accent rounded-xl p-6 h-full flex flex-col justify-between shadow-lg">
             <div>
-              <h3 className="text-xl font-bold mb-4 text-accent">{title}</h3>
+              <h3 className="text-xl font-bold mb-4 gradient-text">{title}</h3>
               <div className="flex flex-wrap gap-2 mb-6">
                 {tags.map((tag, index) => (
-                  <span key={index} className="px-3 py-1 bg-accent/20 text-accent text-xs rounded-full font-medium">
+                  <span key={index} className="px-3 py-1 bg-accent/20 gradient-text text-xs rounded-full font-medium">
                     {tag}
                   </span>
                 ))}
@@ -97,7 +97,7 @@ const ProjectCard = ({
                     href={demoUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 w-full border border-accent text-accent hover:bg-accent hover:text-white py-2 px-4 rounded-lg transition-all duration-300 transform hover:scale-105"
+                    className="flex items-center gap-2 w-full border border-accent gradient-text hover:bg-accent hover:text-white py-2 px-4 rounded-lg transition-all duration-300 transform hover:scale-105"
                   >
                     <Play className="w-4 h-4" />
                     Demo
@@ -121,9 +121,9 @@ const ProjectCard = ({
               <div className="text-center">
                 <div className="animate-pulse">
                   <div className="w-16 h-16 bg-accent/20 rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <Calendar className="w-8 h-8 text-accent" />
+                    <Calendar className="w-8 h-8 gradient-text" />
                   </div>
-                  <p className="text-accent font-medium">Coming Soon</p>
+                  <p className="gradient-text font-medium">Coming Soon</p>
                   <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">{launchDate}</p>
                 </div>
               </div>

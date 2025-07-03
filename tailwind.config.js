@@ -10,6 +10,14 @@ module.exports = {
     extend: {
       colors: {
         accent: "#E156A9",
+        primary: {
+          DEFAULT: "#7C3AED", // purple-600
+          dark: "#6D28D9",   // purple-700
+        },
+        secondary: {
+          DEFAULT: "#2563EB", // blue-600
+          dark: "#1D4ED8",   // blue-700
+        },
         dark: {
           bg: "#0a0a0a",
           surface: "#1a1a1a",
