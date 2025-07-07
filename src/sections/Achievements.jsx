@@ -1,12 +1,12 @@
 /* © 2025 Maheshwar Patnala */
-import { Trophy, Shield, Camera, Users, BookOpen, Code } from "lucide-react"
+import { Trophy, Shield, Camera, Paintbrush, Users, BookOpen, Code } from "lucide-react"
 
 const Achievements = () => {
   const achievements = [
     {
       icon: Trophy,
       title: "Startup Race Winner",
-      description: "2nd Prize @ VNR Innovation Cell",
+      description: "2nd Prize @ VNRVJIET Innovation Cell",
       color: "text-yellow-400",
       bgGradient: "from-yellow-400/30 to-orange-400/30",
       hoverGradient: "from-yellow-400/20 via-orange-400/10 to-amber-500/20",
@@ -28,9 +28,9 @@ const Achievements = () => {
       hoverGradient: "from-green-400/20 via-emerald-400/10 to-teal-500/20",
     },
     {
-      icon: Camera,
-      title: "Event Photographer",
-      description: "Fresher's Event Coverage",
+      icon: Paintbrush,
+      title: "Design Head",
+      description: "Kaksya Sastra, Space club of VNRVJIET",
       color: "text-purple-400",
       bgGradient: "from-purple-400/30 to-pink-400/30",
       hoverGradient: "from-purple-400/20 via-pink-400/10 to-violet-500/20",
@@ -38,7 +38,7 @@ const Achievements = () => {
     {
       icon: Code,
       title: "GDG Volunteer",
-      description: "Google Developer Group VNR",
+      description: "Google Developer Group VNRVJIET",
       color: "text-red-400",
       bgGradient: "from-red-400/30 to-rose-400/30",
       hoverGradient: "from-red-400/20 via-rose-400/10 to-pink-500/20",

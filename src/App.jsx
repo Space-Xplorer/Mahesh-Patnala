@@ -71,7 +71,7 @@ function App() {
       </button> */}
       {/* <section className="gap-4 flex flex-col w-100 max-w-10xl mx-auto px-6 pt-20 overflow-hidden bg-white dark:bg-slate parallax-bg relative"> */}
       {/* Navigation */}
-      <nav className="fixed top-6 left-1/2 transform -translate-x-1/2 z-40 bg-white/60 dark:bg-dark-surface/50 backdrop-blur-md rounded-full px-6 py-3 shadow-lg">
+      <nav className="fixed top-6 left-1/2 transform -translate-x-1/2 z-40 bg-white/60 dark:bg-dark-surface/50 backdrop-blur-md rounded-full px-2 py-2 shadow-lg">
         <div className="flex space-x-6 fill-black dark:fill-white">
           {[
             { name: "Hero", id: "hero" },
@@ -85,7 +85,7 @@ function App() {
             <button
               key={item.name}
               onClick={() => scrollToSection(item.id)}
-              className="text-sm text-gray-700 dark:text-gray-300 transition-colors cursor-pointer font-medium"
+              className="text-sm text-gray-700 dark:text-gray-300 transition-colors cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md px-2 py-1 hover:text-blue-500 dark:hover:text-blue-500 font-medium"
             >
               {item.name}
             </button>
@@ -94,10 +94,13 @@ function App() {
       </nav>
     {/* </section> */}
       <main>
-        <Hero />
+        <section id="hero" className="min-h-screen ...">
+          <Hero />
+        </section>
+        {/* <Hero /> */}
         <Projects />
         <Skills />
-        <Achievements />
+        {/* <Achievements /> */}
         <AIEdge />
         <Timeline />
         <Contact />
