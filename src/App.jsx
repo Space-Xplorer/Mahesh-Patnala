@@ -10,6 +10,7 @@ import Achievements from "./sections/Achievements"
 import AIEdge from "./sections/AIEdge"
 import Timeline from "./sections/Timeline"
 import Contact from "./sections/Contact"
+import FluidCursor from './components/FluidCursor'
 
 function App() {
   const [isDark, setIsDark] = useState(true)
@@ -61,13 +62,13 @@ function App() {
   return (
     <div className="min-h-screen bg-white dark:bg-dark-bg/60 text-black dark:text-white transition-colors duration-300">
       {/* Theme Toggle */}
-      <button
+      {/* <button
         onClick={toggleTheme}
         className="fixed top-6 right-6 z-50 p-3 bg-gray-100 dark:bg-dark-surface border border-gray-300 dark:border-dark-border rounded-full hover:bg-accent/20 transition-colors shadow-lg"
         aria-label="Toggle theme"
       >
         {isDark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
-      </button>
+      </button> */}
       {/* <section className="gap-4 flex flex-col w-100 max-w-10xl mx-auto px-6 pt-20 overflow-hidden bg-white dark:bg-slate parallax-bg relative"> */}
       {/* Navigation */}
       <nav className="fixed top-6 left-1/2 transform -translate-x-1/2 z-40 bg-white/60 dark:bg-dark-surface/50 backdrop-blur-md rounded-full px-6 py-3 shadow-lg">
