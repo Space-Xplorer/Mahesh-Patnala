@@ -1,6 +1,6 @@
 /* © 2025 Maheshwar Patnala */
-import { Sparkles, Zap } from 'lucide-react'
-import ProjectCard from "../components/ProjectCard"
+// import { Sparkles, Zap } from 'lucide-react'
+// import ProjectCard from "../components/ProjectCard"
 
 const Projects = () => {
   const projects = [

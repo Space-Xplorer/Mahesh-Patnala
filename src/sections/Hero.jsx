@@ -1,11 +1,7 @@
 import { useRef, useEffect, Suspense } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
 import HeroText from "../components/HeroText";
 import ParallaxBackground from "../components/parallaxBackground";
-import { Float } from "@react-three/drei";
 import { useMediaQuery } from "react-responsive";
-import { easing } from "maath";
-import Loader from "../components/Loader";
 
 const Hero = () => {
   const isMobile = useMediaQuery({ maxWidth: 853 });
@@ -60,19 +56,6 @@ const Hero = () => {
     >
       <HeroText />
       <ParallaxBackground />
-      <figure
-        className="absolute inset-0"
-        style={{ width: "100vw", height: "100vh" }}
-      >
-        <Canvas camera={{ position: [0, 1, 3] }}>
-          <Suspense fallback={<Loader />}>
-            <Float>
-              {/* Removed Astronaut model */}
-            </Float>
-            <Rig />
-          </Suspense>
-        </Canvas>
-      </figure>
       {/* Scroll Down Button with Animated Wave */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 flex items-center gap-4">
         <a
@@ -109,16 +92,16 @@ const Hero = () => {
   );
 };
 
-function Rig() {
-  useFrame((state, delta) => {
-    easing.damp3(
-      state.camera.position,
-      [state.mouse.x / 10, 1 + state.mouse.y / 10, 3],
-      0.5,
-      delta
-    );
-  });
-  return null;
-}
+// function Rig() {
+//   useFrame((state, delta) => {
+//     easing.damp3(
+//       state.camera.position,
+//       [state.mouse.x / 10, 1 + state.mouse.y / 10, 3],
+//       0.5,
+//       delta
+//     );
+//   });
+//   return null;
+// }
 
 export default Hero;
