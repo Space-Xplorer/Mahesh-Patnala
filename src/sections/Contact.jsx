@@ -79,7 +79,6 @@ const Contact = () => {
   }
 
   return (
-    <FluidCursor>
       <section id="contact" className="py-20 relative overflow-hidden" style={{ backgroundColor: 'transparent' }}>
         
         {/* Cosmic background with midnight sea theme - matching Projects */}
@@ -286,7 +285,6 @@ const Contact = () => {
           </div>
         </div>
       </section>
-    </FluidCursor>
   )
 }
 

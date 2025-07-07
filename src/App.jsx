@@ -2,15 +2,13 @@
 
 /* © 2025 Maheshwar Patnala */
 import { useEffect, useState } from "react"
-import { Moon, Sun } from "lucide-react"
+// import { Moon, Sun } from "lucide-react"
 import Hero from "./sections/Hero"
 import Projects from "./sections/Projects"
 import Skills from "./sections/Skills"
-import Achievements from "./sections/Achievements"
 import AIEdge from "./sections/AIEdge"
 import Timeline from "./sections/Timeline"
 import Contact from "./sections/Contact"
-import FluidCursor from './components/FluidCursor'
 
 function App() {
   const [isDark, setIsDark] = useState(true)
