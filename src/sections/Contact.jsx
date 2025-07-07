@@ -5,7 +5,6 @@ import { useState, useEffect } from "react"
 import { Mail, Github, Linkedin, Download, Phone, MapPin, Send, CheckCircle } from "lucide-react"
 import emailjs from '@emailjs/browser'
 import { EMAILJS_CONFIG } from '../config/emailjs'
-import FluidCursor from '../components/FluidCursor'
 
 const Contact = () => {
   const [formData, setFormData] = useState({
